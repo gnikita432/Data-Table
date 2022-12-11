@@ -24,7 +24,7 @@ function TableInfo() {
   ];
   const conditionalRowStyles = [
     {
-      when: (row) => row.status == true,
+      when: (row) => row.status === true,
       style: {
         backgroundColor: "green",
         color: "white",
@@ -34,7 +34,7 @@ function TableInfo() {
       },
     },
     {
-      when: (row) => row.status == false,
+      when: (row) => row.status === false,
       style: {
         backgroundColor: "red",
         color: "white",
